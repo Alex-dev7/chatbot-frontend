@@ -2,8 +2,45 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 relative  place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+    <div className="w-[370px] h-[690px] mx-auto mt-5 bg-white rounded-2xl border border-zinc-500">
 
-    </main>
-  );
-}
+
+
+
+      <div className="w-[80%]">
+        <span className="text-zinc-500 text-xl font-bold font-['Lato'] leading-7">
+          WEVOLY’s contract tool will guide you through a contract review
+          step-by-step. <br />
+        </span>
+        <span className="text-zinc-500 text-base font-normal font-['Lato'] leading-snug">
+          <br />
+        </span>
+        <span className="text-zinc-500 text-base font-semibold font-['Lato'] leading-snug">
+          Here’s what you will need to get started:
+        </span>
+        <br /><br/>
+        <span className="text-zinc-500 text-base font-bold font-['Lato'] leading-snug">
+          1. Your contract.
+        </span>
+        <span className="text-zinc-500 text-base font-normal font-['Lato'] leading-snug">
+          {" "}
+          Have it open on a screen so you can answer questions that will make it
+          easier for us to do our review quickly and thoroughly.
+          <br />
+        </span>
+        <span className="text-zinc-500 text-base font-bold font-['Lato'] leading-snug">
+          2. An idea of what is important to you.{" "}
+        </span>
+        <span className="text-zinc-500 text-base font-normal font-['Lato'] leading-snug">
+          We will guide you through setting these priorities but you might want
+          to think about them first.{" "}
+        </span>
+      </div>
+    </div>
+  );}
+
+
+
+
+
+// 
