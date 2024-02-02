@@ -5,7 +5,7 @@ import wifi from "../../../public/Wifi.svg"
 
 function Nav() {
   return (
-    <nav className="w-full h-fit  p-[25px] flex justify-between align-middle">
+    <nav className="w-full h-fit absolute  p-[25px] flex justify-between align-middle">
         <span className="text-[#78707C] text-[22px]">
             9:41
         </span>
