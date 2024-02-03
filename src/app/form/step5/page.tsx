@@ -3,7 +3,7 @@ import navScreen from "../../../../public/firstCheck.svg"
 import backArrow from "../../../../public/BackArrow.svg"
 import Link from "next/link";
 
-export default function Step2() {
+export default function Step5() {
   return (
     <div className="h-full pt-20 pb-5  flex flex-col justify-between bg-[#FFF]">
       <Image src={navScreen} alt="" className="w-[85%] mx-auto" />
