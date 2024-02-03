@@ -1,10 +1,11 @@
 import Image from "next/image"
-import navScreen from "../../../public/NavScreen1.svg"
+import navScreen from "../../public/NavScreen1.svg"
+import backArrow from "../../public/BackArrow.svg"
 import Link from "next/link";
 
 export default function about() {
   return (
-    <div className="h-full pt-20 flex flex-col justify-between bg-[#FFF]">
+    <div className="h-full pt-20 pb-5 flex flex-col justify-between bg-[#FFF]">
       <Image src={navScreen} alt="" className="w-[85%] mx-auto" />
       <div className="w-[80%] mx-auto py-9">
             <div className="w-fit pb-8">
@@ -283,11 +284,15 @@ export default function about() {
                 </Link>         
             </div>
         </div>
-        <footer>
-            <div className="w-full h-16 bg-[#F6F6F6] flex justify-center align-middle place-items-center">
-                <span className="text-[#78707C] text-sm font-normal font-['Lato']">
-                    © 2022 Wevoly
-                </span>
+        <footer className="w-[80%] mx-auto">
+            <div className="w-full h-16  flex justify-between align-middle place-items-center">
+                <Link href='/' className="text-zinc-500 text-base font-medium font-['Lato'] leading-relaxed flex space-x-2">
+                    <Image src={backArrow} alt='back arrow icon' />
+                    <span>Back</span>
+                </Link>
+                <Link href='/' className="text-zinc-500 text-base font-medium font-['Lato'] leading-relaxed">
+                    Save Progress & Exit
+                </Link>
             </div>
         </footer>
     </div>

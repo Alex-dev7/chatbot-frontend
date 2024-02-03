@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import contract from "../../public/Group 1990.svg"
 import x from "../../public/Frame.svg"
@@ -5,6 +6,8 @@ import shield from "../../public/Security Shield Green.png"
 import Link from "next/link";
 
 export default function Home() {
+
+
   return (
     <div className="w-[370px] h-[690px] mx-auto mt-28 py-4 bg-white rounded-2xl border border-zinc-500 flex flex-col justify-evenly align-middle place-items-center relative  transition-transform duration-200 shadow-lg">
       <Image width={23} src={x} alt="#" className="absolute  top-5 right-5 hover:size-6 transition-all cursor-pointer" />
@@ -48,10 +51,10 @@ export default function Home() {
         <Image width={40} src={shield} alt="security shield icon"/>
         <p className="text-zinc-500 h-fit text-lg font-medium font-['Lato'] flex place-self-center leading-7">Read about our commitment <br/>to data privacy and security</p>
       </div>
-      <Link href={'/about'} className="w-[85%]">
-        <button className="w-full h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950">
+      <Link href={'/form'} className="w-[85%]  h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex justify-center place-items-center"
+  
+      >   
             Start
-        </button>
       </Link>
     </div>
   );}
