@@ -13,7 +13,7 @@ export default function Step3() {
   return (
     <div className="h-full pt-20 pb-5  flex flex-col justify-between bg-[#FFF]">
       <Image src={navScreen} alt="" className="w-[85%] mx-auto" />
-      <div className="w-[80%] mx-auto py-9">
+      <div className="w-[80%] h-full pt-20 pb-9  mx-auto ">
             <div className="w-fit pb-8">
                 <span className="text-black text-2xl font-semibold font-['Lato']">
                 What kind of contract are we reviewing for you?
@@ -33,7 +33,7 @@ export default function Step3() {
                     </div>
                 ))}
                 </div>
-                <Link href={'/form/step2'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" >               
+                <Link href={'/form/step4'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" >               
                                 Continue
                 </Link>        
             </div>

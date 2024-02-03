@@ -7,7 +7,7 @@ export default function Step2() {
   return (
     <div className="h-full pt-20 pb-5  flex flex-col justify-between bg-[#FFF]">
       <Image src={navScreen} alt="" className="w-[85%] mx-auto" />
-      <div className="w-[80%] mx-auto py-9">
+      <div className="w-[80%] h-full pt-20 mx-auto py-9">
             <div className="w-fit pb-8">
                 <span className="text-black text-2xl font-semibold font-['Lato']">
                     Tell us about yourself
