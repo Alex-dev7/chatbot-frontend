@@ -46,7 +46,7 @@ export default function Step7() {
                         ))}
                     </div>
                 </form> 
-                <Link href={'/form/step7'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" >               
+                <Link href={'/form/step8'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" >               
                                 Continue
                 </Link>        
             </div>
