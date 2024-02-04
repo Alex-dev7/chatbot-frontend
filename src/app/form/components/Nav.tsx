@@ -19,12 +19,11 @@ function Nav() {
         '/form/step8': '/thirdCheck.svg',
         '/form/step9': '/fourthCheck.svg',
         '/form/step10': '/fifthCheck.svg',
-   
     }
 
   return (
     <>
-        <Image width={80} height={20} src={navUrls[pathname]} alt="navigation bar image" className="w-[85%] mx-auto" />
+       {pathname !== '/form/result' ?   <Image width={80} height={20} src={navUrls[pathname]} priority  alt="navigation bar image" className="w-[85%] mx-auto" /> : "" }
     </>
   )
 }

@@ -1,11 +1,46 @@
 "use client"
+import { revalidatePath } from "next/cache";
 import Image from "next/image"
 import Link from "next/link";
-import { useState } from "react"
+import { useState, useEffect } from "react"
+
+// revalidatePath('/form/step8')
+
+// async function getThreadId() {
+//     const res = await fetch('http://localhost:4000/thread')
+   
+//     if (!res.ok) {
+//       // This will activate the closest `error.js` Error Boundary
+//       throw new Error('Failed to fetch data')
+//     }
+
+//     return res.json()
+//   }
 
 export default function Step8() {
+const [thread, setThread] = useState({})
 const [file, setFile] = useState(null)
 const [toggle, setToggle] = useState(false)
+
+// useEffect(() => {
+//     const fetchData = async () => {
+//         const data = await getThreadId();
+//         setFile(thread);
+//       };
+    
+//       fetchData();
+//     console.log(thread)
+// }, [])
+
+// console.log(file)
+
+
+
+function handleSubmit(e: any) {
+    e.preventDefault()
+    console.log('file uploaded')
+    console.log(e.target.file)
+}
 
 
   return (
@@ -23,7 +58,7 @@ const [toggle, setToggle] = useState(false)
             </div>
             <div className="w-full flex flex-col space-y-4">
             
-             <form className="space-y-2 pb-11">
+             <form className="space-y-2 pb-11" onSubmit={handleSubmit} >
                 <span  className="text-[#78707C] text-sm font-normal font-['Lato']">
                                 Attach Document From Phone
                  </span>
@@ -42,12 +77,11 @@ const [toggle, setToggle] = useState(false)
                         <input id="file" type="file" className="hidden" onChange={() => setToggle(true) }/>
                     </label>
                 </div> 
-            </form>         
-
-
-                <Link href={'/form/step9'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" >               
-                                Continue
-                </Link>        
+                {/* <Link href={'#'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" >               
+                  </Link>        */}
+                        <button type="submit" >Continue</button>       
+                 
+            </form>               
             </div>
         </div>
         <footer className="w-[80%] mx-auto">
