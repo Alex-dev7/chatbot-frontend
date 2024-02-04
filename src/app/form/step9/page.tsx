@@ -1,16 +1,12 @@
 import Image from "next/image"
-import navScreen from "../../../../public/fourthCheck.svg"
-import backArrow from "../../../../public/BackArrow.svg"
-import securityShield from "../../../../public/Security Shield Green.png"
 import Link from "next/link";
 
-export default function Step7() {
+export default function Step9() {
 
 
 
   return (
-    <div className="h-full pt-20 pb-5  flex flex-col justify-between bg-[#FFF]">
-      <Image src={navScreen} alt="" className="w-[85%] mx-auto" />
+    <>
       <div className="w-[80%] h-full mx-auto py-9">
             <div className="w-fit pb-8">
                 <span className="text-black text-2xl font-semibold font-['Lato']">
@@ -32,7 +28,7 @@ export default function Step7() {
                 </form>         
 
                 <div className="w-[85%] h-fit flex space-x-2 ">
-                    <Image width={40} src={securityShield} alt="security shield icon"/>
+                    <Image width={40} height={40} src='/shield.png' alt="security shield icon"/>
                     <p className="text-zinc-500 h-fit text-lg font-medium font-['Lato'] flex place-self-center leading-7">Read about our commitment <br/>to data privacy and security</p>
                 </div>
                 <Link href={'/form/step10'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" >               
@@ -43,7 +39,7 @@ export default function Step7() {
         <footer className="w-[80%] mx-auto">
             <div className="w-full h-16  flex justify-between align-middle place-items-center">
                 <Link href='/form/step8' replace className="text-zinc-500 text-base font-medium font-['Lato'] leading-relaxed flex space-x-2">
-                    <Image src={backArrow} alt='back arrow icon' />
+                    <Image width={17} height={17} src='/backArrow.svg' alt='back arrow icon' />
                     <span>Back</span>
                 </Link>
                 <Link href='/' className="text-zinc-500 text-base font-medium font-['Lato'] leading-relaxed">
@@ -51,6 +47,6 @@ export default function Step7() {
                 </Link>
             </div>
         </footer>
-    </div>
+    </>
   );  
 }

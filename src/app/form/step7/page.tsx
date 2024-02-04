@@ -1,7 +1,4 @@
 import Image from "next/image"
-import navScreen from "../../../../public/secondCheck.svg"
-import backArrow from "../../../../public/BackArrow.svg"
-import info from "../../../../public/Info.png"
 import Link from "next/link";
 
 export default function Step7() {
@@ -22,8 +19,8 @@ export default function Step7() {
       ];
 
   return (
-    <div className="h-full pt-20 pb-5  flex flex-col justify-between bg-[#FFF]">
-      <Image src={navScreen} alt="" className="w-[85%] mx-auto" />
+    <>
+
       <div className="w-[80%] h-full mx-auto py-9">
             <div className="w-fit pb-8">
                 <span className="text-black text-2xl font-semibold font-['Lato']">
@@ -54,7 +51,7 @@ export default function Step7() {
         <footer className="w-[80%] mx-auto">
             <div className="w-full h-16  flex justify-between align-middle place-items-center">
                 <Link href='/form/step6' replace className="text-zinc-500 text-base font-medium font-['Lato'] leading-relaxed flex space-x-2">
-                    <Image src={backArrow} alt='back arrow icon' />
+                    <Image width={17} height={17} src='/backArrow.svg' alt='back arrow icon' />
                     <span>Back</span>
                 </Link>
                 <Link href='/' className="text-zinc-500 text-base font-medium font-['Lato'] leading-relaxed">
@@ -62,6 +59,6 @@ export default function Step7() {
                 </Link>
             </div>
         </footer>
-    </div>
+    </>
   );  
 }

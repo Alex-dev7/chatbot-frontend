@@ -1,13 +1,9 @@
 import Image from "next/image"
-import navScreen from "../../../../public/secondCheck.svg"
-import backArrow from "../../../../public/BackArrow.svg"
-import info from "../../../../public/Info.png"
 import Link from "next/link";
 
 export default function Step6() {
   return (
-    <div className="h-full pt-20 pb-5  flex flex-col justify-between bg-[#FFF]">
-      <Image src={navScreen} alt="" className="w-[85%] mx-auto" />
+    <>
       <div className="w-[80%] h-full mx-auto py-9">
             <div className="w-fit pb-8">
                 <span className="text-black text-2xl font-semibold font-['Lato']">
@@ -21,7 +17,7 @@ export default function Step6() {
             <div className="w-full flex flex-col space-y-4">
             
              <form className="space-y-2 pb-11">
-             <Image width={40} src={info} alt='info icon' className="my-4"/>
+             <Image width={40} height={40} src='/Info.png' alt='info icon' className="my-4"/>
                     <div className="w-full flex flex-col space-y-2">
                         <label htmlFor="length" className="text-[#78707C] text-sm font-normal font-['Lato']">
                             Length of Contract (in months)
@@ -56,7 +52,7 @@ export default function Step6() {
         <footer className="w-[80%] mx-auto">
             <div className="w-full h-16  flex justify-between align-middle place-items-center">
                 <Link href='/form/step5' replace className="text-zinc-500 text-base font-medium font-['Lato'] leading-relaxed flex space-x-2">
-                    <Image src={backArrow} alt='back arrow icon' />
+                    <Image width={17} height={17} src='/backArrow.svg' alt='back arrow icon' />
                     <span>Back</span>
                 </Link>
                 <Link href='/' className="text-zinc-500 text-base font-medium font-['Lato'] leading-relaxed">
@@ -64,6 +60,6 @@ export default function Step6() {
                 </Link>
             </div>
         </footer>
-    </div>
+    </>
   );
 }
