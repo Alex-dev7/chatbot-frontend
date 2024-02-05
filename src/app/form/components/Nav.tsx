@@ -18,7 +18,7 @@ function Nav() {
         '/form/step7': '/secondCheck.svg',
         '/form/step8': '/thirdCheck.svg',
         '/form/step9': '/fourthCheck.svg',
-        '/form/step10': '/fifthCheck.svg',
+        '/form/step8/step10': '/fifthCheck.svg',
     }
 
   return (

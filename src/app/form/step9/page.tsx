@@ -31,7 +31,7 @@ export default function Step9() {
                     <Image width={40} height={40} src='/shield.png' alt="security shield icon"/>
                     <p className="text-zinc-500 h-fit text-lg font-medium font-['Lato'] flex place-self-center leading-7">Read about our commitment <br/>to data privacy and security</p>
                 </div>
-                <Link href={'/form/step10'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" >               
+                <Link href={'/form/step8/step10'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" >               
                                 Continue
                 </Link>        
             </div>

@@ -1,45 +1,27 @@
 "use client"
+import { useFileContext } from "@/context/FileContext";
 import { revalidatePath } from "next/cache";
 import Image from "next/image"
 import Link from "next/link";
-import { useState, useEffect } from "react"
+import React, { useState } from "react"
 
 // revalidatePath('/form/step8')
 
-// async function getThreadId() {
-//     const res = await fetch('http://localhost:4000/thread')
-   
-//     if (!res.ok) {
-//       // This will activate the closest `error.js` Error Boundary
-//       throw new Error('Failed to fetch data')
-//     }
 
-//     return res.json()
-//   }
 
 export default function Step8() {
-const [thread, setThread] = useState({})
-const [file, setFile] = useState(null)
 const [toggle, setToggle] = useState(false)
-
-// useEffect(() => {
-//     const fetchData = async () => {
-//         const data = await getThreadId();
-//         setFile(thread);
-//       };
-    
-//       fetchData();
-//     console.log(thread)
-// }, [])
-
-// console.log(file)
+const { setFile } = useFileContext()
 
 
+function onChangeHandler(e: any){
+    setToggle(true)
+    const target = e.target as typeof e.target & HTMLInputElement;
+    if (target.files) {
+        setFile(target.files[0])
+        console.log(target.files[0])
+    }
 
-function handleSubmit(e: any) {
-    e.preventDefault()
-    console.log('file uploaded')
-    console.log(e.target.file)
 }
 
 
@@ -58,7 +40,7 @@ function handleSubmit(e: any) {
             </div>
             <div className="w-full flex flex-col space-y-4">
             
-             <form className="space-y-2 pb-11" onSubmit={handleSubmit} >
+             <form className="space-y-2 pb-11" >
                 <span  className="text-[#78707C] text-sm font-normal font-['Lato']">
                                 Attach Document From Phone
                  </span>
@@ -74,14 +56,15 @@ function handleSubmit(e: any) {
                             <p className="mb-2 text-sm font-semibold text-gray-500 dark:text-gray-400"> + Add New</p>
                             <p className="text-xs text-gray-500 dark:text-gray-400">.doc, .docx and pdf</p>
                         </div>
-                        <input id="file" type="file" className="hidden" onChange={() => setToggle(true) }/>
+                        <input  type="file" id="file" name="file" className="hidden" onChange={onChangeHandler}/>
                     </label>
                 </div> 
-                {/* <Link href={'#'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" >               
-                  </Link>        */}
-                        <button type="submit" >Continue</button>       
+                        <button type="submit"  className={toggle ? `flex` : 'hidden'}>Upload</button>       
                  
-            </form>               
+            </form>  
+                 <Link href={'/form/step9'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" > 
+                     Continue              
+                  </Link>                  
             </div>
         </div>
         <footer className="w-[80%] mx-auto">
