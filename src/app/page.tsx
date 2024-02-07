@@ -16,7 +16,7 @@ export default function Home() {
           WEVOLY’s contract tool will guide you through a contract review
           step-by-step. <br />
         </span>
-        <div className="text-sm"> 
+        <div className="text-[16px]"> 
           <span className="  font-normal  leading-snug">
             <br />
           </span>

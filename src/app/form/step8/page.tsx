@@ -1,12 +1,8 @@
 "use client"
 import { useFileContext } from "@/context/FileContext";
-import { revalidatePath } from "next/cache";
 import Image from "next/image"
 import Link from "next/link";
 import React, { useState } from "react"
-
-// revalidatePath('/form/step8')
-
 
 
 export default function Step8() {
@@ -59,8 +55,6 @@ function onChangeHandler(e: any){
                         <input  type="file" id="file" name="file" className="hidden" onChange={onChangeHandler}/>
                     </label>
                 </div> 
-                        <button type="submit"  className={toggle ? `flex` : 'hidden'}>Upload</button>       
-                 
             </form>  
                  <Link href={'/form/step9'} className="w-[80%] h-14 bg-purple-950 rounded-xl text-white hover:bg-purple-800 transition-colors active:bg-purple-950 flex  justify-center place-items-center absolute bottom-24" > 
                      Continue              

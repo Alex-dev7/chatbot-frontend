@@ -23,7 +23,7 @@ function Nav() {
 
   return (
     <>
-       {pathname !== '/form/result' ?   <Image width={80} height={20} src={navUrls[pathname]} priority  alt="navigation bar image" className="w-[85%] mx-auto" /> : "" }
+       {pathname !==  '/form/step8/step10/result' ?   <Image width={80} height={20} src={navUrls[pathname]} priority  alt="navigation bar image" className="w-[85%] mx-auto" /> : "" }
     </>
   )
 }

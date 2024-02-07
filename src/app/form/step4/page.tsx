@@ -21,35 +21,55 @@ export default function Step4() {
                     <div className="flex space-x-4">
                         <div className="w-full flex flex-col space-y-2">
                             <Image width={40} height={40} src='/Info.png' alt='info icon' className="my-4"/>
-                            <ol className="w-[85%] mx-auto space-y-5 font-light text-zinc-500 text-sm">
+                            <ol className="w-[85%] mx-auto space-y-5 font-light text-zinc-800 text-sm">
                                 <li className="list-decimal">
                                     <select name="member"   size={1} className="w-full h-12 bg-transparent focus:outline-none  focus:ring-1  border border-gray-300 rounded-lg px-4 ">
                                         <option  value="" className="" >Select one</option> 
-                                        
+                                        <option value="Duration of Contract" >Duration of Contract</option>
+                                        <option value="Flexibility in termination options">Flexibility in termination options</option>
+                                        <option value="Scope of Agent duties">Scope of Agent duties</option>
+                                        <option value="Exclusivity">Exclusivity</option>
+                                        <option value="Dispute Resolution">Dispute Resolution</option>
                                     </select>
                                 </li>
                                 <li className="list-decimal">
                                     <select name="member"  size={1} className="w-full h-12 bg-transparent focus:outline-none  focus:ring-1  border border-gray-300 rounded-lg px-4 ">
                                         <option  value="">Select one</option> 
-                                        
+                                        <option value="Duration of Contract" >Duration of Contract</option>
+                                        <option value="Flexibility in termination options">Flexibility in termination options</option>
+                                        <option value="Scope of Agent duties">Scope of Agent duties</option>
+                                        <option value="Exclusivity">Exclusivity</option>
+                                        <option value="Dispute Resolution">Dispute Resolution</option>
                                     </select>
                                 </li>
                                 <li className="list-decimal">
                                     <select name="member"  size={1} className="w-full h-12 bg-transparent focus:outline-none  focus:ring-1  border border-gray-300 rounded-lg px-4 ">
                                         <option  value="">Select one</option> 
-                                        
+                                        <option value="Duration of Contract" >Duration of Contract</option>
+                                        <option value="Flexibility in termination options">Flexibility in termination options</option>
+                                        <option value="Scope of Agent duties">Scope of Agent duties</option>
+                                        <option value="Exclusivity">Exclusivity</option>
+                                        <option value="Dispute Resolution">Dispute Resolution</option>
                                     </select>
                                 </li>
                                 <li className="list-decimal">
                                     <select name="member"  size={1} className="w-full h-12 bg-transparent focus:outline-none  focus:ring-1  border border-gray-300 rounded-lg px-4 ">
                                         <option  value="">Select one</option> 
-                                        
+                                        <option value="Duration of Contract" >Duration of Contract</option>
+                                        <option value="Flexibility in termination options">Flexibility in termination options</option>
+                                        <option value="Scope of Agent duties">Scope of Agent duties</option>
+                                        <option value="Exclusivity">Exclusivity</option>
+                                        <option value="Dispute Resolution">Dispute Resolution</option>  
                                     </select>
                                 </li>
                                 <li className="list-decimal">
                                     <select name="member"  size={1} className="w-full h-12 bg-transparent focus:outline-none  focus:ring-1  border border-gray-300 rounded-lg px-4 ">
                                         <option  value="">Select one</option> 
-                                        
+                                        <option value="Duration of Contract" >Duration of Contract</option>
+                                        <option value="Flexibility in termination options">Flexibility in termination options</option>
+                                        <option value="Scope of Agent duties">Scope of Agent duties</option>
+                                        <option value="Exclusivity">Exclusivity</option>
+                                        <option value="Dispute Resolution">Dispute Resolution</option>
                                     </select>
                                 </li>
                             </ol>

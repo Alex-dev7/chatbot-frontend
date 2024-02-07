@@ -16,12 +16,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" >
-      <body className={`${inter.className} w-full h-screen flex justify-center items-center place-content-center justify-items-center align-middle `}>
-        <main className="w-[430px] h-[932px] relative bg-[#EEE8F0]   flex flex-col"> 
-             {children}
-        </main>
-      </body>
-    </html>
+    <>
+      <head>
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name = "viewport" content="device-height, initial-scale=1.0, viewport-fit=cover"/>
+      </head> 
+       <html lang="en" className="w-[430px] h-[932px]">
+        <body className={`${inter.className} w-[430px] h-[932px] flex justify-center items-center place-content-center justify-items-center align-middle overf `}>
+          <main className="w-full h-full relative bg-[#EEE8F0]   flex flex-col "> 
+              {children}
+          </main>
+        </body>
+      </html>
+    </>
+
   );
 }
